@@ -30,9 +30,7 @@ for line in lines:
         }
         json_data["annotations"][0]["result"].append(annotation)
 
-json_data["data"] = {
-    "image": "C:\\Users\\momen\\Desktop\\json\\image1.jpg"
-}
+
 
 with open('image1.json', 'w') as json_file:
     json.dump(json_data, json_file, indent=4)
